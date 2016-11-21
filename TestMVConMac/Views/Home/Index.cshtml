@@ -1,1 +1,12 @@
-﻿<h2>Welcome to ASP.NET MVC @ViewData["Version"] on @ViewData["Runtime"]!</h2>
+﻿@model TestMVConMac.HomeModel
+
+<h2>Welcome to ASP.NET MVC @ViewData["Version"] on @ViewData["Runtime"]!</h2>
+
+<div>
+	<h3>Model Output</h3>
+	<ul>
+		<li>@Model.Id</li>
+		<li>@Model.FirstName</li>
+		<li>@Model.LastName</li>
+	</ul>
+</div>

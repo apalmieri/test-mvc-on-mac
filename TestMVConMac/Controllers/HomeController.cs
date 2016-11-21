@@ -17,7 +17,9 @@ namespace TestMVConMac.Controllers
 			ViewData["Version"] = mvcName.Version.Major + "." + mvcName.Version.Minor;
 			ViewData["Runtime"] = isMono ? "Mono" : ".NET";
 
-			return View();
+			var homeModel = new HomeModel(1, "Adriano", "Palmieri");
+
+			return View(homeModel);
 		}
 	}
 }
